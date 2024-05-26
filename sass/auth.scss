@@ -1,0 +1,140 @@
+@import './variables.scss';
+@import './core.scss';
+.otp-wrapper {
+  max-width: 489px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .buttonWrapper {
+    .twoFaButton {
+      margin-top: 0px;
+      width: 305px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+  .bottomLink {
+    margin-top: 25px;
+    width: 225px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .primaryText {
+      margin: 0px;
+      font-weight: 400;
+      font-size: 12px;
+      text-align: center;
+    }
+    .link {
+      font-size: 12px;
+      font-weight: 400;
+      text-align: center;
+      color: #fc594a;
+    }
+  }
+  .errorText {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    .otpErrorText {
+      color: #fc594a;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+  .authenticationHeading {
+    max-width: 489px;
+    min-height: 53px;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .authenticationTitle {
+    margin-top: 30px;
+    max-width: 418px;
+    height: 63px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+  .optContainer {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    :focus {
+      color: #fc594a;
+    }
+    .optMainContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .optMainContainerBoolFalse {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .optCodeInput {
+      display: flex;
+      border: 1px solid $borderInputFieldColor;
+      justify-content: center;
+      align-items: center;
+      width: 47px;
+      height: 64px;
+      border-radius: 8px;
+      margin-left: 14px;
+      font-size: 24px;
+      text-align: center;
+      text-decoration: underline;
+      text-decoration-color: $buttonPrimaryColor;
+    }
+    .optCodeInput:focus-visible {
+      border: 2px solid #fc594a !important;
+      outline: none;
+    }
+  }
+}
+
+.mainInnerContainerForget {
+  width: 305px;
+  height: 100px;
+  .MuiTypography-subtitle1 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  .textField {
+    min-height: 63px;
+  }
+}
+.textFieldWrapperSignUp {
+  .textField {
+    min-height: 59px;
+  }
+}
+.mainInnerContainer {
+  width: 305px;
+  .MuiTypography-subtitle1 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  .textField {
+    min-height: 63px;
+  }
+  .googleButton {
+    & > button {
+      height: 50px;
+      margin-bottom: 5px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .mainInnerContainer {
+    width: 82vw;
+  }
+}

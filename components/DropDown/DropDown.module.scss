@@ -1,0 +1,32 @@
+@import '../../sass/variables.scss';
+.container {
+  width: 100%;
+  & > div > div {
+    border-radius: 8px;
+  }
+  .labelTextField {
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: $textDarkColor;
+  }
+  .select {
+    padding-right: 18px;
+  }
+  .error {
+    color: red;
+  }
+  .borderColorOnError {
+    border: 1px solid red;
+  }
+  .placeHolderStyles {
+    color: #afafaf;
+  }
+  .placeHolderStyles {
+    color: #afafaf;
+  }
+  .placeHolderStyles {
+    color: #afafaf;
+  }
+}

@@ -1,0 +1,42 @@
+{
+    "css.format.newlineBetweenRules": false,
+    "css.format.newlineBetweenSelectors": false,
+    "css.format.preserveNewLines": false,
+    "css.hover.documentation": false,
+    "css.hover.references": false,
+    "scss.format.newlineBetweenRules": false,
+    "scss.format.newlineBetweenSelectors": false,
+    "scss.format.preserveNewLines": false,
+    "scss.hover.documentation": false,
+    "scss.hover.references": false,
+    "files.insertFinalNewline": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "prettier.bracketSameLine": true,
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 140,
+    "markdown.preview.typographer": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.trailingComma": "es5",
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+}

@@ -1,0 +1,12 @@
+@import '../../sass/variables.scss';
+.buttonWrapper {
+  width: 100%;
+  position: relative;
+  button {
+    border-radius: 8px;
+    height: 50px;
+  }
+  .loading {
+    margin-left: 11px;
+  }
+}

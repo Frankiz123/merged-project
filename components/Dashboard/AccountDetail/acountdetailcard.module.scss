@@ -1,0 +1,103 @@
+@import '../../../sass/variables.scss';
+.acountDetail {
+  border: 1px solid $white300;
+  border-radius: 8px;
+  position: relative;
+  height: max-content;
+  @media screen and (min-width: 750px) {
+    padding: 30px 30px;
+    .heading {
+      font-weight: 600;
+      font-size: 21px;
+      margin-bottom: 20px;
+      color: $textDarkColor;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    padding: 30px;
+    .heading {
+      font-weight: 600;
+      font-size: 21px;
+      margin-bottom: 20px;
+      color: $textDarkColor;
+    }
+  }
+  .subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    color: $textDarkColor;
+    padding-bottom: 20px;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .column {
+      display: flex;
+      align-items: center;
+      .logo {
+        padding-right: 24px;
+      }
+      img {
+        padding-right: 6px;
+        padding-bottom: 4px;
+      }
+      .textStart {
+        min-width: fit-content;
+        font-weight: 600;
+        font-size: 14px;
+        padding-right: 3px;
+      }
+      .textBold {
+        font-weight: 400;
+        font-size: 14px;
+        color: $textDarkColor;
+      }
+      .textEnd {
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+  }
+  .textStart {
+    font-weight: 400;
+    font-size: 14px;
+    min-width: 94px;
+    color: $textDarkColor;
+  }
+  .link {
+    margin-top: 22px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration-line: underline;
+    color: $buttonPrimaryColor;
+  }
+  .hr {
+    margin: 10px 0px;
+  }
+}
+.linearContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .textStart {
+    font-weight: 400;
+    font-size: 14px;
+    color: $textDarkColor;
+  }
+  .textEnd {
+    min-width: 110px;
+    // background-color: black;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: end;
+    color: $textDarkColor;
+  }
+  span {
+    border-radius: 100px;
+  }
+}

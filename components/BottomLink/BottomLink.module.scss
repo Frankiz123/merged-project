@@ -1,0 +1,37 @@
+@import '../../sass/variables.scss';
+.conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  .link {
+    text-decoration: underline;
+    color: $buttonPrimaryColor;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .secondaryText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+.margin {
+  margin-left: 3px;
+}
+.row {
+  flex-direction: row;
+}
+.column {
+  flex-direction: column;
+}
+.fixwidth {
+  max-width: 310px;
+}
+.leftAlign {
+  justify-content: flex-start;
+}

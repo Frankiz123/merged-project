@@ -1,0 +1,13 @@
+@import '../../sass/variables.scss';
+.conatiner {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: $backgroundColor;
+  .progressBar {
+    color: $buttonPrimaryColor;
+  }
+}

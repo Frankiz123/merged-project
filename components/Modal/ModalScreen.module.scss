@@ -1,0 +1,53 @@
+@import '../../sass/variables.scss';
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $whiteColor;
+  border-radius: 15px;
+  padding: 0% 1%;
+  max-height: 85%;
+  overflow: hidden;
+  .header {
+    padding: 20px;
+    background-color: $whiteColor;
+    border-radius: 15px;
+    .buttonContainer {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .headingText {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      color: $textDarkColor;
+      margin-top: -15px;
+    }
+  }
+  .form {
+    min-width: 100%;
+    height: 85%;
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 85%;
+    min-width: 85%;
+    max-height: 78%;
+    padding-bottom: 100px;
+    .header {
+      .headingText {
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        margin-top: 17px;
+        text-align: center;
+      }
+    }
+    .form {
+      height: 88%;
+    }
+  }
+}

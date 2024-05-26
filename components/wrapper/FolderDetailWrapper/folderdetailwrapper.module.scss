@@ -1,0 +1,92 @@
+@import '../../../sass/variables.scss';
+.container {
+  .topLabel {
+    max-width: 516px;
+  }
+  .headerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    .headerSecondaryContainer {
+      display: flex;
+      margin-right: 40px;
+    }
+    .totalClicksValue {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      margin-left: 14px;
+      color: $textDarkColor;
+    }
+    .totalClicksLabel {
+      margin-left: 5px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: $textDarkColor;
+    }
+    .dateValue {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: $textDarkColor;
+      margin-left: 14px;
+    }
+    .iconsContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .headerLabel {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 21px;
+      color: $textDarkColor;
+      margin-right: 40px;
+    }
+    .labelSpacer {
+      padding-left: 20px;
+    }
+  }
+  .accordian {
+    padding: 14px 0px;
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid $white300;
+    background-color: $whiteColor;
+    margin-top: 30px;
+    h2 {
+      max-width: 500px;
+    }
+    .inputTextStyle {
+      max-width: 340px;
+    }
+  }
+  .bottomTextContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bottomTextLabel {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21px;
+      color: $textDarkColor;
+      text-align: center;
+      margin-top: 70px;
+      max-width: 407px;
+    }
+  }
+  .buttonContainer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    .actionButton {
+      width: max-content;
+      button {
+        padding: 18px 50px;
+      }
+    }
+  }
+}

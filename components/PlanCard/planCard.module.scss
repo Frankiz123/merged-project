@@ -1,0 +1,124 @@
+@import '../../sass/variables.scss';
+.card {
+  padding: 26px 40px;
+  height: 100%;
+  min-height: 300px;
+  margin-top: 39px;
+  position: relative;
+  overflow: visible;
+  background: $whiteColor;
+  border: 1px solid $white300;
+  border-radius: 8px;
+  margin: 0px;
+  .boxChip {
+    max-width: 105px;
+    height: 20px;
+    background: $textDarkColor;
+    position: absolute;
+    border-radius: 200px;
+    font-weight: 600;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.13em;
+    color: $whiteColor;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 0;
+  }
+  .container {
+    .title {
+      margin-top: 15px;
+      font-weight: 600;
+      font-size: 25px;
+      color: $textDarkColor;
+      font-family: 'Poppins-Regular';
+    }
+    .description {
+      margin-top: 15px;
+      font-weight: 400;
+      font-size: 12px;
+      color: $textDarkColor;
+      min-height: 40px;
+    }
+    .divBoth {
+      margin-top: 15px;
+      font-weight: 600;
+      color: $textDarkColor;
+      font-family: 'Poppins-Regular';
+      .price {
+        font-size: 35px;
+      }
+      .time {
+        font-size: 15px;
+      }
+    }
+    .cardButton {
+      margin-top: 15px;
+      background: $buttonBackgroundColor;
+      border: 1px solid $inputTextColor;
+      border-radius: 8px;
+      button {
+        color: #b9b9b9;
+      }
+    }
+    .upgradeBtn {
+      margin-top: 15px;
+      background: $buttonPrimaryColor;
+      border: 1px solid $buttonPrimaryColor;
+      border-radius: 8px;
+      button {
+        color: $whiteColor;
+      }
+    }
+    .accessText {
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 12px;
+      color: $textDarkColor;
+      min-height: 40px;
+    }
+    .dash {
+      margin-top: 20px;
+      margin-right: 15px;
+      border: 1px dashed rgba(203, 203, 203, 0.4);
+    }
+    .secondaryHeading {
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 16px;
+      color: $textDarkColor;
+      font-family: 'Poppins-Medium';
+    }
+    .listItems {
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 12px;
+      color: $textDarkColor;
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 899px) {
+  .card {
+    padding: 20px 16px;
+    .container {
+      .title {
+        font-size: 18px;
+      }
+      .divBoth {
+        .price {
+          font-size: 25px;
+        }
+        .time {
+          font-size: 12px;
+        }
+      }
+      .secondaryHeading {
+        font-size: 12px;
+      }
+    }
+  }
+}

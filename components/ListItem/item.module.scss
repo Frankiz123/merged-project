@@ -1,0 +1,169 @@
+@import '../../sass/variables.scss';
+.card {
+  margin-top: 10px;
+  background: $whiteColor;
+  border: 2px solid $white300;
+  border-radius: 8px;
+  padding: 20px;
+  -webkit-transition: none;
+  transition: none;
+  box-shadow: none;
+}
+
+.mobileCardView {
+  margin: 7px 0;
+  .cardHeader {
+    background-color: #f4f4f4;
+    height: 31px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px 8px 0px 0px;
+    .headerContent {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+  }
+
+  .cardContent {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    align-items: baseline;
+    .mainContent {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .description {
+        font-family: 'Poppins-Regular';
+        font-weight: 600;
+        font-size: 16px;
+      }
+      .noOflinks {
+        color: #fc594a;
+        font-family: 'Poppins-Regular';
+        font-weight: 400;
+        font-size: 14px;
+      }
+      .linksWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .link {
+          gap: 15px;
+          align-items: baseline;
+          display: flex;
+          flex-direction: row;
+          .linkText {
+            color: #232323;
+            font-family: 'Poppins-Regular';
+            font-weight: 400;
+            font-size: 15px;
+            text-decoration: none;
+            max-width: 200px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+
+  .cardfFooter {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      img {
+        cursor: pointer;
+        &:hover {
+          filter: invert(43%) sepia(68%) saturate(1889%) hue-rotate(332deg) brightness(101%) contrast(98%);
+        }
+      }
+    }
+    .copy {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      text-transform: capitalize;
+      cursor: pointer;
+      &:hover {
+        color: $linkPrimaryColor;
+        filter: invert(43%) sepia(68%) saturate(1889%) hue-rotate(332deg) brightness(101%) contrast(98%);
+      }
+    }
+  }
+}
+
+.activeCard {
+  box-shadow: 4px 6px 12px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.activeCard:hover {
+  box-shadow: 5px 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.linkCard {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  .radioText {
+    flex: 1;
+  }
+  .descriptionWrapper {
+    flex: 7;
+    .description {
+      font-size: 18px;
+      font-weight: 400;
+      overflow: hidden;
+      max-width: 250px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .primaryText {
+      font-size: 18;
+      font-weight: 400;
+      color: $buttonPrimaryColor;
+      .secondaryText {
+        font-weight: 800;
+      }
+    }
+  }
+  .dateWrapper {
+    flex: 3;
+    .date {
+      color: $CheckBoxBorderColor;
+      font-size: 14px;
+      text-align: right;
+    }
+    .totalClicks {
+      font-size: 14px;
+      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+      gap: 7px;
+    }
+  }
+}
+@media screen and (max-width: 899px) {
+  .linkCard {
+    flex-wrap: wrap;
+    .descriptionWrapper {
+      .description {
+        font-size: 14px;
+        max-width: 200px;
+      }
+      .primaryText {
+        font-size: 14px;
+      }
+    }
+  }
+}

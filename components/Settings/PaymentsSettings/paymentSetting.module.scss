@@ -1,0 +1,160 @@
+@import '../../../sass/variables.scss';
+// .accountEmail {
+//   margin-top: 30px;
+//   max-width: 490px;
+//   display: flex;
+//   align-items: center;
+//   padding: 18px 0px 18px 35px;
+//   margin-right: 10px;
+//   border-radius: 8px;
+//   border: 1px solid #f4f4f4;
+// }
+.form {
+  .billingHistory {
+    margin: 30px 0px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .tableContainer {
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    transition: none;
+    table {
+      thead {
+        background-color: $inputTextFieldColor;
+        tr {
+          border: none;
+          th {
+            color: $inputTextColor;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+          }
+          th:first-child {
+            border-top-left-radius: 11px;
+            border-bottom-left-radius: 11px;
+          }
+          th:last-child {
+            border-top-right-radius: 11px;
+            border-bottom-right-radius: 11px;
+          }
+        }
+      }
+      tbody {
+        tr {
+          border-bottom: solid 1px $borderInputFieldColor;
+          td {
+            color: $textDarkColor;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            .download {
+              cursor: pointer;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              gap: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// .alternativeEmail {
+//   margin-top: 30px;
+//   margin-bottom: 40px;
+//   height: 135px;
+//   max-width: 490px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   padding-left: 35px;
+//   padding-right: 15px;
+//   margin-right: 10px;
+//   border-radius: 8px;
+//   border: 1px solid #f4f4f4;
+//   .alternativeEmailTextField {
+//     max-width: 345px;
+//     padding-left: 35px;
+//   }
+// }
+.payment {
+  max-width: 490px;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border: 1px solid #f4f4f4;
+  padding: 10px 15px 10px 35px;
+  .aboveDivider {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .textFieldIcons {
+      width: 50px;
+      height: 31px;
+    }
+    .paymentText {
+      font-size: 14px;
+      font-weight: 400;
+      margin-left: 15px;
+    }
+  }
+  .dividerPayment {
+    margin: 29px 20px 0px 45px;
+  }
+  .paymentButtonBox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 45px;
+    .paymentButton {
+      font-size: 14px;
+      display: flex;
+      gap: 5px;
+      img {
+        width: 10px;
+        height: 10px;
+      }
+    }
+    .paymentButtonBoxText {
+      font-size: 14px;
+      font-weight: 400;
+      color: #fc594a;
+      cursor: pointer;
+    }
+  }
+}
+// .paypalPayment {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-items: center;
+//   max-width: 490px;
+//   border-radius: 8px;
+//   margin-top: 30px;
+//   margin-bottom: 40px;
+//   border: 1px solid #f4f4f4;
+//   padding: 10px 15px 10px 35px;
+//   .textFieldIcons {
+//     width: 50px;
+//     height: 31px;
+//   }
+//   .paymentText {
+//     font-size: 14px;
+//     font-weight: 400;
+//     margin-left: 15px;
+//   }
+//   .dividerPayment {
+//     margin: 29px 20px 0px 45px;
+//   }
+// }
+// .addButton {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+//   margin-bottom: 40px;
+//   &>button {
+//     padding-left: 0px;
+//   }
+// }

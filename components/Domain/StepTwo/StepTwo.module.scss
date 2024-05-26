@@ -1,0 +1,114 @@
+@import '/sass/variables.scss';
+.mainContainer {
+  margin-left: 15%;
+  margin-top: 60px;
+  @media screen and (max-width: 860px) {
+    margin-left: 14%;
+  }
+  @media screen and (max-width: 790px) {
+    margin-left: 13%;
+  }
+  .headerText {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: $textDarkColor;
+  }
+  .domainStatusContainer {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    .badge {
+      font-weight: 600;
+      font-size: 14px;
+      background-color: $textDarkColor;
+      width: max-content;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+    .status {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 30px;
+      .title {
+        font-weight: 600;
+        font-size: 14px;
+        margin-right: 5px;
+      }
+      .statusText {
+        font-weight: 600;
+        font-size: 14px;
+        color: $success;
+      }
+    }
+  }
+  .acccordianContainer {
+    margin-top: 50px;
+    width: 900px;
+    .secondaryText {
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .primaryText {
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    .accordian {
+      padding: 14px 0px;
+      width: 70%;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid $white300;
+      background-color: $whiteColor;
+      h2 {
+        max-width: 500px;
+      }
+    }
+  }
+  .rightContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .headerText {
+      font-weight: 400;
+      font-size: 21px;
+      text-align: center;
+      color: $textDarkColor;
+      margin-bottom: 20px;
+    }
+    .btnContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .refreshBtn {
+        background: $buttonPrimaryColor;
+        border-radius: 8px;
+        margin: 15px;
+        button {
+          color: $whiteColor;
+          font-weight: 500;
+          font-size: 16px;
+        }
+      }
+      .finishBtn {
+        background: $success;
+        border-radius: 8px;
+        margin: 15px;
+        button {
+          color: $whiteColor;
+          font-weight: 500;
+          font-size: 16px;
+        }
+      }
+    }
+    .deleteBtn {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

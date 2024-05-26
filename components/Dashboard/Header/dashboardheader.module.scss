@@ -1,0 +1,50 @@
+@import '../../../sass/variables.scss';
+.dashboard_header {
+  .subContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+    .heading {
+      font-weight: 700;
+      font-size: 40px;
+      margin-right: 50px;
+      font-family: 'Poppins-Bold';
+    }
+    .dropDown {
+      max-width: 155px;
+      div {
+        div {
+          border: 1px solid #232323;
+          border-radius: 10px;
+          div {
+            border: none;
+            padding: 7px 19px;
+            padding-right: 1px;
+            font-weight: 400;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    color: $buttonPrimaryColor;
+    .linkSecondaryText {
+      margin-left: -4px;
+    }
+  }
+}
+@media screen and (min-width: 319px) and (max-width: 899px) {
+  .dashboard_header {
+    .subContainer {
+      .dropDown {
+        margin-left: 0px;
+        max-width: 139px;
+      }
+    }
+  }
+}

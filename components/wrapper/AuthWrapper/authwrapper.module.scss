@@ -1,0 +1,294 @@
+@import '../../../sass/variables.scss';
+.auth_wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  background-color: $whiteColor;
+  position: relative;
+
+  .signUpContainer {
+    min-height: 860px;
+    height: 100vh;
+  }
+  .container {
+    .authForm {
+      min-height: 700px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      gap: 13px;
+      .mergeLogoContainer {
+        width: 100%;
+        display: flex;
+        max-height: 80px;
+        align-items: center;
+        justify-content: flex-start;
+        .main_logo {
+          margin-left: 20px;
+          margin-top: 20px;
+          max-width: 165px;
+          max-height: 55px;
+        }
+      }
+      .mergeFooterContainer {
+        display: flex;
+        width: 100%;
+        max-height: 80px;
+        justify-content: flex-start;
+        align-items: center;
+        .allRightsWrapper {
+          margin-left: 20px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 20px;
+          .allRights {
+            color: $textSecondaryColor;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+          }
+          > div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 9px;
+            a {
+              cursor: pointer;
+              color: $textSecondaryColor;
+              text-decoration: none;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .mergeFooterIphone {
+        display: flex;
+        width: 100%;
+        max-height: 80px;
+        justify-content: flex-start;
+        align-items: center;
+        .allRightsWrapper {
+          margin-left: 20px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 20px;
+          .allRights {
+            color: $textSecondaryColor;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+          }
+          > div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 9px;
+            a {
+              cursor: pointer;
+              color: $textSecondaryColor;
+              text-decoration: none;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .iconImage {
+        width: auto;
+        height: auto;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        letter-spacing: 0.5px;
+        max-width: 434px;
+        font-family: 'Poppins-Bold';
+        margin-bottom: 33px;
+      }
+      .fixwidth {
+        max-width: 310px;
+      }
+      .conatiner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        .link {
+          text-decoration: underline;
+          color: $buttonPrimaryColor;
+          cursor: pointer;
+        }
+        .margin {
+          margin-left: 3px;
+        }
+      }
+      .row {
+        flex-direction: row;
+      }
+      .column {
+        flex-direction: column;
+      }
+    }
+    .formStyle {
+      margin-top: 0px;
+    }
+    .loginButton {
+      margin-top: 0px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .forgetPassword {
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+      font-size: 12px;
+      font-weight: 400;
+      font-style: normal;
+      color: #fc594a;
+      cursor: pointer;
+    }
+    .dividerText {
+      display: flex;
+      align-items: center;
+      height: 70%;
+      margin-top: 3px;
+      font-size: 10px;
+      font-weight: 600;
+      font-style: normal;
+      color: #cbcbcb;
+    }
+    .googleButton {
+      margin-top: 32px;
+      font-size: 15px;
+      font-weight: 500px;
+      font-style: normal;
+      color: #232323;
+      border: 1px solid #232323;
+    }
+    .rightBlock {
+      background-color: $buttonPrimaryColor;
+      border-radius: 50px 0px 0px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .rightMainContainer {
+        width: 85%;
+        .secondaryImage {
+          height: 182px;
+          width: 182px;
+        }
+        .rightHeading {
+          max-width: 600px;
+          margin-top: 50px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 35px;
+          letter-spacing: 0.01px;
+          color: $whiteColor;
+        }
+        .textDiv {
+          margin-top: 40px;
+          display: flex;
+          flex-direction: column;
+          .primaryText {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 21px;
+            margin-bottom: 20px;
+            color: $whiteColor;
+          }
+          .secondayTextStyle {
+            font-weight: 300;
+            font-size: 14px;
+            color: $whiteColor;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 899px) {
+  .auth_wrapper {
+    height: 100vh;
+
+    .main_logo_conatiner {
+      background-color: $whiteColor;
+      position: fixed;
+      width: 100%;
+      padding: 11px;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        display: flex;
+        .main_logo {
+          max-width: 149px;
+          position: inherit;
+        }
+      }
+    }
+
+    .container {
+      .authForm {
+        .mergeLogoContainer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .mergeFooterIphone {
+          width: 100%;
+          padding-top: 30px;
+          padding-bottom: 170px;
+          .allRightsWrapper {
+            background-color: $whiteColor;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            gap: -1px;
+            > div {
+              margin-bottom: -30px;
+            }
+          }
+        }
+        .mergeFooterContainer {
+          width: 100%;
+          padding-bottom: 100px;
+          margin-top: 67px;
+          .allRightsWrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            gap: -1px;
+            > div {
+              margin-bottom: -30px;
+            }
+          }
+        }
+        .heading {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+@import '../../../sass/variables.scss';
+.optionWrapper {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 7px;
+  cursor: pointer;
+  border: solid 1px $textSecondaryColor;
+  border-radius: 8px;
+  padding: 7px;
+  h6 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+.formContainer {
+  min-width: 800px;
+  width: 100%;
+  min-height: 100%;
+  padding: 0 2% 18% 2%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .label {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .inputWrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    .fieldAdorment {
+      padding-top: 33px;
+    }
+    .loadingWrapper {
+      margin-right: 7px;
+    }
+    .selectError {
+      border: solid 2px $dangerCheckColor;
+      border-radius: 8px;
+    }
+    .error {
+      color: $dangerCheckColor;
+      font-weight: 400;
+      font-size: 0.75rem;
+      letter-spacing: 0.03333em;
+      text-align: left;
+      margin-top: 3px;
+      margin-right: 14px;
+      margin-bottom: 0;
+      margin-left: 14px;
+    }
+  }
+  .footerCotainer {
+    background-color: $whiteColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding-bottom: 2%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    min-width: 100%;
+    .footerWrapper {
+      width: 400px;
+      .footerLabel {
+        font-size: 21px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+      }
+      .footerButtonWrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 899px) {
+  .formContainer {
+    min-width: 100%;
+    padding: 0px 21px;
+    .inputWrapper {
+      .inputTextStyle {
+        width: 90%;
+      }
+    }
+    .footerCotainer {
+      position: relative;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      .footerWrapper {
+        width: 100%;
+        .footerLabel {
+          font-size: 15px;
+          padding: 0px 35px;
+        }
+        .footerButtonWrapper {
+          flex-direction: column-reverse;
+          align-items: center;
+          > div {
+            width: 167px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+body {
+  #__next {
+    .Toastify {
+      .Toastify__toast-container {
+        width: auto;
+        max-width: 410px;
+        z-index: 999999;
+        .Toastify__toast {
+          border-radius: 12px;
+          // .Toastify__toast-body {
+          //   .Toastify__toast-icon {
+          //     svg {
+          //       border: solid 2px white;
+          //       border-radius: 20px;
+          //     }
+          //   }
+          // }
+        }
+        .Toastify__close-button {
+          display: none;
+        }
+      }
+    }
+  }
+}

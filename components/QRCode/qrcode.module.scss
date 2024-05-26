@@ -1,0 +1,80 @@
+@import '../../sass/variables.scss';
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: max-content;
+  .image {
+    width: 155px;
+  }
+  .downloadButton {
+    width: max-content;
+    margin-top: -15px;
+    button {
+      background-color: $whiteColor;
+      color: $textDarkColor;
+      box-shadow: none;
+      &:hover {
+        background-color: $whiteColor;
+        color: $textDarkColor;
+        box-shadow: none;
+      }
+    }
+  }
+  .popover {
+    .downloadButton1 {
+      width: max-content;
+      margin-top: -15px;
+      button {
+        background-color: $whiteColor;
+        color: $textDarkColor;
+        box-shadow: none;
+        &:hover {
+          background-color: $whiteColor;
+          color: $textDarkColor;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .dropDown {
+    min-width: 136px;
+    fieldset {
+      border: none;
+    }
+  }
+}
+
+.popover {
+  padding: 15px;
+  border-radius: 8px;
+  background: #f8f8f8;
+  max-width: 148px;
+  .downloadButton1 {
+    width: max-content;
+    button {
+      background-color: transparent;
+      color: $textDarkColor;
+      box-shadow: none;
+      height: fit-content;
+      padding: 6px 6px;
+      &:hover {
+        background-color: transparent;
+        color: $textDarkColor;
+        box-shadow: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    .image {
+      width: 73px;
+    }
+  }
+}

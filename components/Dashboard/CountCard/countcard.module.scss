@@ -1,0 +1,19 @@
+@import '../../../sass/variables.scss';
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $textDarkColor;
+  border-radius: 8px;
+  padding: 0px 25px;
+  min-height: 100px;
+  flex-wrap: wrap;
+  .heading {
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+  :last-child {
+    font-weight: 700;
+  }
+}

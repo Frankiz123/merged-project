@@ -1,0 +1,143 @@
+@import '../../../sass/variables.scss';
+
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  .heading {
+    span {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      font-family: 'Poppins-Bold';
+    }
+    p {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 10px;
+    }
+  }
+  .container {
+    margin-top: 25px;
+    .gridMargin {
+      padding-right: 5px;
+      min-height: 91px;
+      max-width: 345px;
+      margin-right: 10px;
+    }
+    .gridText {
+      display: flex;
+      align-items: center;
+      padding-right: 5px;
+      max-width: 345px;
+      padding-left: 15px;
+      margin-bottom: 17px;
+      .bottomErrorMainContainer {
+        margin-top: 10px;
+        height: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .errorContainer {
+          height: 12px;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          .circleIconStyle {
+            font-size: 5px;
+            color: $inputTextColor;
+          }
+          .closeIconStyle {
+            font-size: 20px;
+            color: $dangerCheckColor;
+          }
+          .checkIconStyle {
+            font-size: 20px;
+            color: $successCheckColor;
+          }
+          .errorText {
+            margin-left: 7px;
+            font-weight: 400;
+            font-size: 12px;
+          }
+          .baseColor {
+            color: $inputTextColor;
+          }
+          .errorColor {
+            color: $dangerCheckColor;
+          }
+          .successColor {
+            color: $successCheckColor;
+          }
+        }
+      }
+    }
+    .OptionsText {
+      margin-top: 35px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .switchButtons {
+      padding-left: 6px;
+      margin-top: 35px;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+    }
+    .buttonGroup {
+      padding: 40px 0px 40px 0px;
+      display: flex;
+      gap: 20px;
+      .buttons {
+        width: max-content;
+        .saveChanges {
+          display: flex;
+          width: 200px;
+          height: 55px;
+        }
+        .cancelChanges {
+          width: 200px;
+        }
+      }
+    }
+    .mobileGrid {
+      margin-top: 30px;
+      min-height: 91px;
+      max-width: 345px;
+    }
+    .divider {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 899px) {
+  .outerContainer {
+    .container {
+      margin-top: 40px;
+      .gridMargin {
+        max-width: 100%;
+      }
+      .buttonGroup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 30px;
+        gap: 10px;
+        .buttons {
+          .saveChanges {
+            width: 167px;
+            height: 50px;
+          }
+          .cancelChanges {
+            width: 167px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+@import '../../../sass/variables.scss';
+.boxWrapper {
+  height: 100%;
+  border: 1px solid #f4f4f4;
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+  }
+  .filterContainer {
+    margin-top: 11px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .checkBoxWrapper {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      input {
+        cursor: pointer;
+      }
+      .label {
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        font-weight: normal;
+        font-family: 'Poppins-Medium';
+      }
+    }
+  }
+  .WrapperShowMore {
+    height: 151px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 151px;
+    overflow: hidden;
+    scroll-behavior: inherit;
+    scroll-margin-top: 0;
+    transition: ease-in-out 1s;
+  }
+  .WrapperShowLess {
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: ease-in-out 0.5s;
+    z-index: 1000;
+  }
+  .card {
+    background-color: #f4f4f4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .border {
+    border-bottom: solid 1px $borderColor;
+    padding: 6px 15px !important;
+  }
+  .singleDevice {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    .singleDeviceHeading {
+      flex: 2;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .hashText {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+      }
+      .name {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+    .singleDeviceDetail {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 4px;
+      .value {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+      }
+      .totalClicks {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+      }
+      .innerValue {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+      }
+      .innerTotalClicks {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+  }
+  .footerLink {
+    position: absolute;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    cursor: pointer;
+    bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

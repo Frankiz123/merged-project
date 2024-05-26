@@ -1,0 +1,73 @@
+@import '../../sass/variables.scss';
+.container {
+  padding: 14px 90px;
+  .textContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      text-align: center;
+      color: $textDarkColor;
+      font-family: 'Poppins-Bold';
+    }
+    .secondaryText {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: $textDarkColor;
+      margin-top: 30px;
+    }
+    .secondaryText1 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: $textDarkColor;
+      margin-top: 4px;
+    }
+    .radioContainer {
+      margin-top: 40px;
+      span {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        color: $textDarkColor;
+      }
+    }
+  }
+  .bottomLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    .firstLink {
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+      text-decoration-line: underline;
+      text-decoration-color: $buttonPrimaryColor;
+      color: $buttonPrimaryColor;
+    }
+    .secondLink {
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+      text-decoration-line: underline;
+      text-decoration-color: $textDarkColor;
+      color: $textDarkColor;
+      margin-top: 20px;
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .container {
+    padding: 14px 40px;
+  }
+}

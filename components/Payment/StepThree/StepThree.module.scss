@@ -1,0 +1,49 @@
+@import '../../../sass/variables.scss';
+.mainContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 174px;
+  div {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 23.33px;
+      height: 40px;
+    }
+    .headerText {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      color: $textDarkColor;
+    }
+  }
+  .secondaryText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: $textDarkColor;
+    width: 602px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .greetingText {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: $textDarkColor;
+  }
+  .submitButton {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 305px;
+  }
+  .bottomContainer {
+    img {
+      height: 18px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import '../../sass/variables.scss';
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  background: $whiteColor;
+  border: 1px solid $white300;
+  border-radius: 15px;
+  padding: 20px; // adds padding to the content
+  margin-bottom: 20px;
+  .formLabelContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    width: 100%;
+    .titleContainer {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .titleLabel {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: $textDarkColor;
+      }
+      .dateLabel {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #d9d9d9;
+      }
+    }
+    .linksContainer {
+      display: flex;
+      justify-content: space-between;
+      .linksLabel {
+        margin-top: 4px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: $buttonPrimaryColor;
+      }
+      .clickCountContainer {
+        display: flex;
+        .clickCountLabel {
+          margin-left: 9.75px;
+        }
+      }
+    }
+  }
+  .topLabel {
+    max-width: 516px;
+  }
+}

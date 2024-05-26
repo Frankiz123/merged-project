@@ -1,0 +1,12 @@
+@import '../../sass/variables.scss';
+
+.iconButton {
+  color: $textSecondaryColor;
+  background-color: transparent;
+
+  &:active,
+  &:hover {
+    background-color: transparent;
+    color: $buttonPrimaryColor;
+  }
+}

@@ -1,0 +1,138 @@
+@import '../../../sass/variables.scss';
+.acountDetail {
+  border: 1px solid $white300;
+  border-radius: 8px;
+  position: relative;
+  min-height: 399px;
+  max-height: 100%;
+  .upperContainer {
+    height: 278px;
+    overflow: hidden;
+    @media screen and (min-width: 750px) {
+      padding: 30px 30px;
+      .heading {
+        font-weight: 600;
+        font-size: 21px;
+        margin-bottom: 20px;
+        color: $textDarkColor;
+      }
+    }
+    @media screen and (max-width: 750px) {
+      padding: 30px 0px;
+      .heading {
+        font-weight: 600;
+        font-size: 21px;
+        margin-bottom: 20px;
+        color: $textDarkColor;
+        padding-left: 20px;
+      }
+    }
+    .subtitle {
+      font-weight: 600;
+      font-size: 14px;
+      color: $textDarkColor;
+      padding-bottom: 20px;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .column {
+        display: flex;
+        align-items: center;
+        .logo {
+          padding-right: 24px;
+        }
+        img {
+          padding-right: 6px;
+          padding-bottom: 4px;
+        }
+        .textStart {
+          min-width: fit-content;
+          font-weight: 600;
+          font-size: 14px;
+          padding-right: 3px;
+        }
+        .textBold {
+          font-weight: 400;
+          font-size: 14px;
+          color: $textDarkColor;
+        }
+        .textEnd {
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0px 15px;
+      background: $backgroundColor;
+      border-radius: 8px;
+      .column {
+        display: flex;
+        align-items: center;
+        img {
+          padding-right: 6px;
+          padding-bottom: 4px;
+        }
+        .textStart {
+          min-width: fit-content;
+          font-weight: 600;
+          font-size: 14px;
+          padding-right: 3px;
+        }
+        .textBold {
+          font-weight: 600;
+          font-size: 14px;
+          color: $textDarkColor;
+        }
+        .textEnd {
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+    }
+    .textStart {
+      font-weight: 400;
+      font-size: 14px;
+      min-width: 94px;
+      color: $textDarkColor;
+    }
+  }
+  .linearContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .textStart {
+      font-weight: 400;
+      font-size: 14px;
+      color: $textDarkColor;
+    }
+    .textEnd {
+      font-weight: 400;
+      font-size: 14px;
+      text-align: end;
+      color: $textDarkColor;
+    }
+    span {
+      border-radius: 100px;
+    }
+  }
+  .link {
+    position: absolute;
+    bottom: 40px;
+    padding-left: 30px;
+    a {
+      cursor: pointer;
+      font-weight: 300;
+      font-size: 12px;
+      text-decoration: none;
+      color: $textDarkColor;
+    }
+  }
+}

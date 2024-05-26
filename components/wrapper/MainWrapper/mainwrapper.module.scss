@@ -1,0 +1,171 @@
+@import '../../../sass/variables.scss';
+.main_wrapper {
+  display: flex;
+  background-color: $whiteColor;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .app_bar {
+    position: fixed;
+    min-height: auto;
+
+    .mobileMainLogo {
+      display: none;
+    }
+    .navItems {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-width: 18%;
+
+      .addLink {
+        width: 136px;
+      }
+      .help {
+        color: black;
+        line-height: 0px;
+        margin: 0 20px;
+      }
+      .dropdownWrapper {
+        cursor: pointer;
+        .circularBtnContainer {
+          height: 45px;
+          width: 45px;
+          background-color: #000000;
+          border-radius: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .userImage {
+            width: 45px;
+            height: 45px;
+            border-radius: 25px;
+          }
+        }
+      }
+    }
+    .menuButton {
+      color: $textDarkColor;
+    }
+    .menuButtonHide {
+      display: none;
+    }
+  }
+
+  .main {
+    flex-grow: 1;
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-right: 0px;
+    overflow: auto;
+  }
+  .mainTrialDaysMargin {
+    padding-bottom: 40px;
+    padding-top: 140px;
+  }
+  .drawer {
+    .drawerImage {
+      margin-top: 200px;
+    }
+  }
+}
+.box {
+  margin: 20px;
+  .title {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .email {
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+  .marginBottom {
+    margin-bottom: 20px;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-decoration: none;
+    color: $textDarkColor;
+    img {
+      width: 19px;
+      height: 19px;
+      margin-right: 10px;
+    }
+    .mainOption {
+      font-size: 14px;
+      font-weight: 400;
+      cursor: pointer;
+    }
+    .accountType {
+      font-size: 11px;
+      font-weight: 300;
+      margin-right: 10px;
+    }
+    .accontBadge {
+      background-color: $buttonPrimaryColor;
+      color: $whiteColor;
+      padding: 3px 13px;
+      font-size: 9px;
+      font-weight: 300;
+      margin-left: 10px;
+      border-radius: 14px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 899px) {
+  .main_wrapper {
+    height: calc(100% - 60px);
+    .mainTrialDaysMargin {
+      padding-top: 80px;
+    }
+    .app_bar {
+      width: 100%;
+      border: 0px;
+      .navItems {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        .mobileMainLogo {
+          display: inline;
+          margin-right: 20px;
+        }
+        .addLink {
+          display: none;
+        }
+      }
+    }
+    .addLinkMobile {
+      display: flex;
+      padding-left: 25px;
+      align-items: center;
+      margin-top: 78px;
+      background-color: #f8f8f8;
+      padding-top: 27px;
+      button {
+        width: 196px;
+      }
+    }
+    .addLinkTrialDaysMargin {
+      margin-top: 110px;
+    }
+    .main {
+      padding-left: 0px;
+      overflow: auto;
+    }
+    .mainLogo {
+      display: none;
+    }
+  }
+  .trialDaysMobile {
+    padding-top: 55px;
+  }
+}

@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Poppins-Regular';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url('/fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  body {
+    font-family: 'Poppins-Regular', sans-serif;
+    b,
+    strong {
+      font-family: 'Poppins-Bold', sans-serif;
+      font-weight: 700;
+    }
+    #__next {
+      height: 100vh;
+      background-color: #ffffff;
+      ::-webkit-scrollbar {
+        width: 7px;
+      }
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #e0e0e0;
+        border-radius: 7px;
+      }
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #fc594a;
+        border-radius: 7px;
+      }
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ff4e3e;
+      }
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 7px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fc594a;
+  border-radius: 7px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4e3e;
+}
+@media screen and (max-width: 899px) {
+  body {
+    #__next {
+      height: 100vh;
+      background-color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import '../../sass/variables.scss';
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .headingText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .subtitleText {
+    font-style: normal;
+    font-weight: 275;
+    font-size: 18px;
+    text-align: center;
+    color: $textDarkColor;
+    max-width: 507px;
+    margin-top: 25px;
+    padding: 0px 10px;
+  }
+  .resend {
+    width: max-content;
+    margin-top: 40px;
+    button {
+      padding: 18px 50px;
+    }
+  }
+}

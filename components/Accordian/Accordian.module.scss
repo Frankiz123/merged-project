@@ -1,0 +1,12 @@
+@import '../../sass/variables.scss';
+.accordian {
+  border: 1px solid $white300;
+  border-radius: 8px;
+  flex: 1;
+  .LabelText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: $textDarkColor;
+  }
+}

@@ -1,0 +1,53 @@
+@import '/sass/variables.scss';
+.card {
+  .form {
+    .radioText {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      span {
+        color: $textDarkColor;
+      }
+    }
+    .fromControlContianer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      div {
+        margin-right: 10px;
+        img {
+          margin: 0px 3px;
+        }
+      }
+    }
+    .paypalFromControlContianer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        margin-right: 13px;
+      }
+    }
+    .inputsContainer {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      .textField {
+        width: 60%;
+      }
+      .textFieldCvc {
+        width: 35%;
+      }
+    }
+    .submitButton {
+      padding-top: 30px;
+    }
+  }
+  .MuiTableRow-root {
+    padding: 40px !important;
+  }
+  .row {
+    height: 60px;
+  }
+}

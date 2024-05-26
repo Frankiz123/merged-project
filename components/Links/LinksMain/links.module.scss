@@ -1,0 +1,224 @@
+@import '../../../sass/variables.scss';
+.imageIcon:hover {
+  filter: invert(43%) sepia(68%) saturate(1889%) hue-rotate(332deg) brightness(101%) contrast(98%);
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  .heading {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Poppins-Bold';
+  }
+  .marginTop {
+    margin-top: 20px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    .userLinkWrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+    h6 {
+      font-size: 25px;
+    }
+    .countWrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      .linksCount {
+        margin-left: 10px;
+        padding: 7px;
+        font-weight: 600;
+        border-radius: 8px;
+        background-color: $black;
+        color: $whiteColor;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 9px;
+      }
+    }
+    .filerWrapper {
+      cursor: pointer;
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 7px;
+      .filter {
+        font-size: 15px;
+        font-weight: 400;
+        color: $CheckBoxBorderColor;
+      }
+      input {
+        cursor: pointer;
+      }
+      .label {
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        color: $textDarkColor;
+        user-select: none;
+        font-family: 'Poppins-Medium';
+      }
+    }
+  }
+  .listWrapper {
+    height: 100%;
+    overflow: hidden;
+    .listContaier {
+      height: 100%;
+      .list {
+        height: 100%;
+        overflow-y: auto;
+        padding-bottom: 75px;
+        padding-right: 7px;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        button {
+          padding: 11px 5px;
+          cursor: pointer;
+          margin-right: -23px;
+        }
+      }
+      p {
+        margin: 0px;
+        padding: 0px;
+      }
+    }
+    .detailContainer {
+      height: 100%;
+      .list {
+        height: 100%;
+        overflow-y: auto;
+        padding: 10px 0px 40px 10px;
+      }
+      .editRow {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: -15px;
+      }
+      p {
+        margin: 0px;
+        padding: 0px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1222px) and (max-width: 1360px) {
+  .wrapper {
+    .marginTop {
+      .userLinkWrapper {
+        margin: 0;
+        padding: 0;
+        .countWrapper {
+          h6 {
+            font-size: 20px;
+          }
+          .linksCount {
+            font-size: 16px;
+            padding: 3px 11px;
+          }
+        }
+        .filerWrapper {
+          .filter {
+            font-size: 12px;
+          }
+          .label {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1221px) {
+  .wrapper {
+    .marginTop {
+      .userLinkWrapper {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        .countWrapper {
+          justify-content: flex-start;
+          h6 {
+            font-size: 20px;
+          }
+          .linksCount {
+            font-size: 16px;
+            padding: 3px 11px;
+          }
+        }
+        .filerWrapper {
+          justify-content: flex-start;
+          .filter {
+            font-size: 12px;
+          }
+          .label {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 899px) {
+  .wrapper {
+    padding: 0px 26px;
+    .row {
+      margin-left: 10px;
+      h6 {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .linksCount {
+        width: 35px;
+        height: 35px;
+        font-size: 13px;
+        border-radius: 8px;
+        text-align: center;
+      }
+    }
+    .listWrapper {
+      .listContaier {
+        .list {
+          overflow-y: scroll;
+          height: -webkit-fill-available;
+        }
+        .row {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          button {
+            padding: 11px 5px;
+            cursor: pointer;
+            margin-right: 0px;
+          }
+        }
+      }
+      .detailContainer {
+        height: initial;
+        overflow: hidden;
+        .list {
+          overflow-y: hidden;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import '/sass/variables.scss';
+.card {
+  .radioText {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    span {
+      color: $textDarkColor;
+    }
+  }
+  .bottomContainer {
+    margin-top: 25px;
+    div {
+      display: flex;
+      justify-content: space-between;
+      margin: 0px 3px;
+      .billingLabel {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: $inputTextColor;
+      }
+      .billingValues {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: right;
+        color: $textDarkColor;
+      }
+    }
+    .totalContainer {
+      margin-top: 20px;
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .iconContainer {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      svg {
+        margin-left: 11.08px;
+        color: $buttonPrimaryColor;
+      }
+    }
+    .bottomContainer {
+      margin-top: 25px;
+    }
+  }
+  .submitButton {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .termsandPolicyContainer {
+    display: flex;
+  }
+  .termsandPolicyText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    color: $textDarkColor;
+  }
+  .termsandPolicyLinks {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+  }
+}

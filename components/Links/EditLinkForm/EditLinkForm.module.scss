@@ -1,0 +1,196 @@
+@import '../../../sass/variables.scss';
+.formContainer {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  margin-top: 40px;
+  .rowContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    .slashText {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: $buttonPrimaryColor;
+      margin-top: 17px;
+    }
+    .fullWidth {
+      width: 100%;
+      margin-bottom: 3px;
+    }
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin: 11px 0px;
+    .inputCol {
+      display: flex;
+      flex-direction: column;
+      .helpCenter {
+        margin-top: 11px;
+      }
+      .fieldMessageWrapper {
+        margin-top: 13px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        > div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          p {
+            padding: 0px;
+            margin: 0px;
+            font-size: 12px;
+            font-weight: 400;
+            margin-left: 5px;
+          }
+        }
+        .closeIconStyle {
+          color: $dangerCheckColor;
+        }
+        .checkIconStyle {
+          color: $successCheckColor;
+        }
+      }
+    }
+  }
+  .toogleButton {
+    margin-left: 7px;
+  }
+  .largeLabel {
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .radioSectionText {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    width: 340px;
+  }
+  .footerCotainer {
+    z-index: 999;
+    background-color: $whiteColor;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2%;
+    min-width: 100%;
+    > div {
+      width: 200px;
+    }
+  }
+  .normalLabel {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 13px;
+    margin-top: 23px;
+  }
+}
+@media screen and (max-width: 899px) {
+  .formContainer {
+    min-width: 0px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    .labelText {
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .checkRow {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      margin: 0px;
+      overflow-x: hidden;
+      .loadingWrapper {
+        min-width: 35px;
+        margin-top: -55px;
+      }
+      .inputWrapper {
+        min-width: 100%;
+        .textField {
+          height: 49px;
+        }
+      }
+    }
+    .checkFooterCotainer {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 33px;
+      > div {
+        width: 167px;
+        margin-top: 20px;
+      }
+    }
+    .row {
+      flex-direction: column;
+      gap: 0px;
+      margin: 0px;
+      .inputCol {
+        min-width: 100%;
+        margin-top: 15px;
+        br {
+          display: none;
+        }
+      }
+    }
+    .rowContainer {
+      flex-wrap: wrap;
+      margin-top: 15px;
+      .dropdown {
+        > div {
+          > div {
+            height: 49px;
+          }
+        }
+      }
+      .slashText {
+        display: none;
+      }
+    }
+    .footerCotainer {
+      position: unset;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      > div {
+        width: 167px;
+        margin-top: 20px;
+      }
+    }
+    .normalLabel {
+      margin-bottom: 0px;
+      width: 100%;
+    }
+    .largeLabel {
+      font-weight: 700;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    .radioSectionText {
+      width: 100%;
+    }
+    .toogleButton {
+      width: 100%;
+      margin-bottom: 11px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import '../../sass/variables.scss';
+.container {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: $textDarkColor;
+  padding: 18px;
+  border-radius: 8px;
+  gap: 10px;
+  .itemContainer {
+    display: flex;
+    gap: 7px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    .labelText {
+      color: $whiteColor;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+    }
+    .valueText {
+      color: $whiteColor;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      padding-left: '30%';
+    }
+  }
+}
+@media screen and (max-width: 899px) {
+  .container {
+    justify-content: space-between;
+    padding: 18px 30px;
+    .itemContainer {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      .valueText {
+        min-width: max-content;
+        font-size: 14px;
+      }
+      .labelText {
+        min-width: max-content;
+        font-size: 14px;
+      }
+    }
+  }
+}

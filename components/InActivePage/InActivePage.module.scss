@@ -1,0 +1,45 @@
+.wraperBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: auto;
+  padding: 0% 4%;
+  .link {
+    line-height: 0px;
+    .logo {
+      margin-top: 150px;
+      width: 146px;
+      height: 55px;
+      line-height: 0px;
+    }
+  }
+  .textBox {
+    max-width: 573px;
+    margin-top: 65px;
+  }
+  .secondtextBox {
+    max-width: 573px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }
+  .heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    font-family: 'Poppins-Medium';
+    text-align: center;
+  }
+  .subText {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 37.5px;
+    font-family: 'Poppins-Regular';
+    text-align: center;
+    margin-top: 28px;
+    .linkSubText {
+      color: #fc594a;
+      font-weight: 600;
+    }
+  }
+}

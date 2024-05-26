@@ -1,0 +1,201 @@
+@import '../../../sass/variables.scss';
+.mainContainer {
+  padding-right: 46px;
+  .heading {
+    // margin-top: 40px;
+    span {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      font-family: 'Poppins-Bold';
+    }
+    p {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 10px;
+    }
+  }
+  .benefits {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration-line: underline;
+    a {
+      color: $buttonPrimaryColor;
+    }
+  }
+  .radioCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .textSecondary {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: $defaultCheckColor;
+    }
+    span {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      color: $textDarkColor;
+    }
+  }
+  .mainCardFlex {
+    display: flex;
+  }
+  .cardContainer {
+    margin-top: 31px;
+    // .card {
+    //   padding: 15px 20px;
+    //   margin: 0px;
+    //   height: 100%;
+    // }
+  }
+  .boxCards {
+    margin-top: 29px;
+    .latestPayment {
+      padding: 26px 20px;
+      height: 100%;
+      background: $whiteColor;
+      border: 1px solid $white300;
+      border-radius: 8px;
+      .boxTB {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .title {
+          font-weight: 600;
+          font-size: 18px;
+          color: $textDarkColor;
+        }
+        .detailBtn {
+          display: flex;
+          justify-content: flex-end;
+          width: max-content;
+          button {
+            width: max-content;
+            padding: 7px 9px;
+            color: $textDarkColor;
+            border: 1px solid $textDarkColor;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 10px;
+            height: 29px;
+          }
+        }
+      }
+      .umtBottomBox {
+        .box01 {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: 5px;
+          .textQa {
+            font-weight: 400;
+            font-size: 12px;
+            color: $inputTextColor;
+          }
+          .textAns {
+            font-weight: 600;
+            font-size: 12px;
+            color: $textDarkColor;
+          }
+        }
+      }
+    }
+    .nextPayment {
+      min-height: 249px;
+      height: 100%;
+      background: $whiteColor;
+      border: 1px solid $white300;
+      border-radius: 8px;
+      padding: 26px 20px;
+      .title {
+        font-weight: 600;
+        font-size: 18px;
+        color: $textDarkColor;
+      }
+      .nextPaymentDisc {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 12px;
+        color: $inputTextColor;
+      }
+      .boxDueDate {
+        height: 61px;
+        background: $inputTextFieldColor;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        padding: 20px;
+        .calendar {
+          height: 21px;
+          width: 21px;
+        }
+        .checkciircle2 {
+          height: 21px;
+          width: 21px;
+        }
+        .dueDate {
+          font-weight: 400;
+          font-size: 12px;
+          margin-top: -10px;
+          margin-bottom: 10px;
+          margin-left: 15px;
+          color: $inputTextColor;
+        }
+        .date {
+          font-weight: 600;
+          font-size: 12px;
+          margin-top: -6px;
+          margin-left: 15px;
+          color: $textDarkColor;
+        }
+      }
+      .dueDateBtn {
+        margin-top: 17px;
+        font-weight: 500;
+        font-size: 14px;
+        color: $whiteColor;
+        border-radius: 8px;
+      }
+    }
+    .accountDetail {
+      height: 249px;
+      background: $whiteColor;
+      border: 1px solid $white300;
+      border-radius: 8px;
+      .title {
+        margin-top: 26px;
+        margin-left: 20px;
+        font-weight: 600;
+        font-size: 18px;
+        color: $textDarkColor;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 899px) {
+  .mainContainer {
+    padding-right: 0px;
+    .cardContainer {
+      margin-top: 38px;
+      height: 100%;
+    }
+    .radioCard {
+      margin-bottom: 58px;
+      .textSecondary {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

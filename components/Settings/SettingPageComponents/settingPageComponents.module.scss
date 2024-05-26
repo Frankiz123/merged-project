@@ -1,0 +1,28 @@
+.title {
+  font-size: 25px;
+  font-weight: 400;
+  color: #232323;
+  margin-bottom: 40px;
+}
+.pageWrapper {
+  flex: 1;
+  padding: 0px;
+  padding-top: 40px;
+  padding-bottom: 120px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 899px) {
+  .title {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-family: 'Poppins-Bold';
+  }
+  .pageWrapper {
+    padding-top: 0px;
+    padding: 0px 38px;
+  }
+}

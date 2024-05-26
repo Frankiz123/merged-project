@@ -1,0 +1,302 @@
+@import './variables.scss';
+// Checkbox color change
+body {
+  input[type='checkbox'] {
+    accent-color: $textDarkColor;
+  }
+}
+// :root {
+//   --toastify-color-success: gray;
+//   --toastify-icon-color-success: gray;
+// }
+// Payment Screen Scss
+.paymentWrapper {
+  margin-left: 15%;
+  margin-top: 60px;
+  @media screen and (max-width: 860px) {
+    margin-left: 14%;
+  }
+  @media screen and (max-width: 790px) {
+    margin-left: 13%;
+  }
+}
+.settingList {
+  &.MuiListItemButton-root {
+    &.Mui-selected {
+      background-color: #f8f8f8 !important;
+    }
+    &:hover {
+      background-color: #fafafa !important;
+    }
+  }
+  .MuiListItemText-primary {
+    font-size: 18px;
+    color: #232323;
+    font-weight: 600;
+  }
+  .MuiListItemText-secondary {
+    font-size: 18px;
+    color: #afafaf;
+    font-weight: 400;
+  }
+  @media screen and (max-width: 899px) {
+    &.MuiListItemButton-root {
+      &.Mui-selected {
+        background-color: #fafafa !important;
+        .MuiListItemText-primary {
+          color: #232323;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+    }
+    .MuiListItemText-primary {
+      font-size: 16px;
+      color: #a5a5a5;
+    }
+    .MuiListItemText-secondary {
+      font-size: 16px;
+      color: #afafaf;
+    }
+  }
+}
+.headingSection {
+  .MuiListItemText-primary {
+    font-size: 18px;
+    color: #232323;
+    font-weight: 600;
+  }
+  .MuiListItemText-secondary {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #afafaf;
+    font-weight: 400;
+  }
+}
+.TextFieldSectionHeading {
+  .MuiListItemText-primary {
+    font-size: 14px;
+    color: #232323;
+    font-weight: 600;
+  }
+  .MuiListItemText-secondary {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #afafaf;
+    font-weight: 400;
+  }
+}
+.adressHeading {
+  .MuiListItemText-primary {
+    font-size: 14px;
+    color: #232323;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .MuiListItemText-secondary {
+    font-size: 14px;
+    color: #afafaf;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+.passwordDescription {
+  .MuiListItemText-primary {
+    font-size: 12px;
+    color: #afafaf;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .MuiListItemText-secondary {
+    font-size: 12px;
+    color: #afafaf;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+.accountSettingDropDown {
+  .MuiOutlinedInput-root {
+    background-color: #fafafc;
+    height: 45px;
+  }
+}
+.tableheader {
+  .MuiTableHead-root {
+    border-radius: 19px;
+    background-color: #232323;
+  }
+}
+//Campaigns Screen
+.main-campaign-container {
+  margin-left: 60px;
+  margin-right: 60px;
+  .campaigns-header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: $textDarkColor;
+  }
+  .secondary-campaign-container {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 22px;
+    .campaigns-heading {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+    }
+    .campaign-value {
+      background-color: $textDarkColor;
+      color: $whiteColor;
+      padding: 1px 10px;
+      border-radius: 8px;
+      margin-left: 15px;
+    }
+  }
+  .main-grid-section {
+    display: flex;
+    .button-section {
+      .left-button-box {
+        display: flex;
+        justify-content: space-between;
+        .empty-icon-button {
+          justify-content: flex-end;
+          align-items: flex-end;
+          display: flex;
+        }
+      }
+    }
+    .button-section2 {
+      align-items: center;
+      width: 100%;
+      .button-pencil-container {
+        display: flex;
+        justify-content: flex-end;
+        .button-pencil {
+          padding: 0px;
+          justify-content: flex-end;
+        }
+      }
+      .form {
+        background: $whiteColor;
+        border: 1px solid $white300;
+        border-radius: 15px;
+        padding: 20px; // adds padding to the content
+        .inputTextStyle {
+          max-width: 340px;
+        }
+        .verticalDivider {
+          margin-top: 20px;
+        }
+        .links-value {
+          color: $buttonPrimaryColor;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+        }
+        .linksContainer {
+          margin-top: 25px;
+          .linksListBox {
+            display: flex;
+            align-items: center;
+            img {
+              width: 20px;
+            }
+            .linkTextName {
+              margin-left: 17.67px;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .modal-heading-label {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+  }
+}
+.dashboardContainer {
+  overflow-y: scroll;
+  width: 100%;
+  height: 91vh;
+  padding-bottom: 100px;
+  .card {
+    border: '1px solid';
+    border-color: $white300;
+    border-radius: '8px';
+    padding: '30px 20px';
+    height: '399px';
+  }
+}
+.textField {
+  .MuiInputBase-root {
+    .MuiInputBase-input {
+      padding-left: 20px;
+      font-size: 12px;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+}
+.css-1qztuna-MuiButtonBase-root-MuiListItemButton-root.Mui-selected {
+  background-color: #f5f5f5;
+  &:hover {
+    background-color: #f5f5f5;
+  }
+}
+table {
+  tbody {
+    tr {
+      .subscription_status {
+        font-weight: 600;
+        padding: 8px;
+        border-radius: 20px;
+      }
+      .past_due {
+        background-color: rgba(236, 50, 31, 0.1);
+        color: $dangerCheckColor;
+      }
+      .canceled {
+        background-color: rgba(236, 50, 31, 0.1);
+        color: $dangerCheckColor;
+      }
+      .draft {
+        background-color: rgba(236, 50, 31, 0.1);
+        color: $dangerCheckColor;
+      }
+      .completed {
+        background-color: rgba(58, 225, 126, 0.1);
+        color: $success;
+      }
+      .billed {
+        background-color: rgba(58, 225, 126, 0.1);
+        color: $success;
+      }
+      .ready {
+        background-color: rgba(58, 225, 126, 0.1);
+        color: $success;
+      }
+    }
+  }
+}
+
+.css-rh92k-MuiPaper-root-MuiMobileStepper-root {
+  margin-top: 23px;
+  border-radius: 14px;
+  padding: 14px 16px;
+  background-color: #efefef;
+
+  .MuiMobileStepper-dotActive {
+    background-color: #232323;
+  }
+  .css-114p2tk-MuiMobileStepper-dot {
+    background-color: #d9d9d9;
+  }
+}

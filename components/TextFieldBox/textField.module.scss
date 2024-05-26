@@ -1,0 +1,36 @@
+@import '../../sass/variables.scss';
+.labelTextField {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  color: $textDarkColor;
+}
+.inputTextField {
+  border-radius: 20%;
+  font-weight: 400;
+  font-size: 12px;
+  width: 100%;
+  & > div {
+    border-radius: 8px;
+    height: 40px;
+  }
+}
+.inputTextFieldLarge {
+  border-radius: 20%;
+  font-weight: 400;
+  font-size: 12px;
+  width: 100%;
+  & > div {
+    border-radius: 8px;
+    height: 56px;
+  }
+}
+@media screen and (max-width: 899px) {
+  .inputTextFieldLarge {
+    & > div {
+      height: 49px;
+    }
+  }
+}

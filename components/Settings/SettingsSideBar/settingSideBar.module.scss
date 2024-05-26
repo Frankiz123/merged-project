@@ -1,0 +1,45 @@
+@import '../../../sass/variables.scss';
+
+.listWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 0px 12%;
+  .listItemButton {
+    gap: 5%;
+    display: flex;
+    padding: 6% 5%;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+    .listIconContainer {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      min-width: 0px;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 899px) {
+  .listWrapper {
+    display: flex;
+    margin-top: 0px;
+    border-left: 1px solid $gray;
+    margin-left: 25px;
+    padding-left: 15px;
+    margin-top: 10px;
+    padding-right: 0px;
+    .listItemButton {
+      .listItem {
+        white-space: normal;
+
+        .MuiListItemText-primary {
+          color: red;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import '../../../sass/variables.scss';
+.payment_wrapper {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  .paymentForm {
+    margin-top: 62px;
+    width: 100%;
+  }
+  .col {
+    .labelText {
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: $textDarkColor;
+    }
+  }
+}

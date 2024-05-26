@@ -1,0 +1,522 @@
+@import '../../sass/variables.scss';
+.detailWrapper {
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 5px;
+  .card {
+    margin-top: 10px;
+    background: $whiteColor;
+    border: 2px solid $white300;
+    box-shadow: 0px 18px 20px -8px rgba(57, 57, 57, 0.05) !important;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  .detailCard {
+    .row {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .description {
+        font-size: 21px;
+        font-weight: 600;
+        overflow: hidden;
+        max-width: 650px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .iconContainer {
+        display: flex;
+        .centerRow {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-left: 15px;
+          gap: 7px;
+          .normalText {
+            font-size: 18px;
+            font-weight: 400;
+          }
+          .boldText {
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+      }
+      .primaryText {
+        font-size: 18;
+        font-weight: 400;
+        color: $buttonPrimaryColor;
+        .secondaryText {
+          font-weight: 800;
+        }
+      }
+      .copy {
+        color: $black;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        position: relative;
+        padding: 0px;
+        width: 100px;
+        height: 40px;
+      }
+      .copyText {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        opacity: 1;
+        transition: opacity 1s ease;
+        position: absolute;
+        text-transform: none;
+      }
+      .copiedText {
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        transition: opacity 1s ease;
+        text-transform: none;
+        img {
+          margin-right: 2px;
+        }
+      }
+      .fadeOut {
+        opacity: 0;
+      }
+      .fadeIn {
+        opacity: 1;
+      }
+    }
+    .link {
+      display: flex;
+      flex-direction: row;
+      font-size: 15;
+      font-weight: 400;
+      margin: 9px 0px;
+      .linkText {
+        margin-left: 15px;
+        overflow: hidden;
+        max-width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-decoration: none;
+        color: $textDarkColor;
+      }
+    }
+    .detailContainer {
+      display: flex;
+      justify-content: space-between;
+      .row {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .description {
+          font-size: 21px;
+          font-weight: 600;
+          overflow: hidden;
+          max-width: 650px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .iconContainer {
+          display: flex;
+          .centerRow {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 15px;
+            gap: 7px;
+            .normalText {
+              font-size: 18px;
+              font-weight: 400;
+            }
+            .boldText {
+              font-size: 18px;
+              font-weight: 600;
+            }
+          }
+        }
+        .primaryText {
+          font-size: 18;
+          font-weight: 400;
+          color: $buttonPrimaryColor;
+          .secondaryText {
+            font-weight: 800;
+          }
+        }
+        .copy {
+          color: $black;
+          display: flex;
+          align-items: center;
+          gap: 7px;
+          background-color: transparent;
+          cursor: pointer;
+          &:active,
+          &:hover {
+            background-color: transparent;
+            color: $linkPrimaryColor;
+            filter: invert(43%) sepia(68%) saturate(1889%) hue-rotate(332deg) brightness(101%) contrast(98%);
+          }
+        }
+      }
+      .link {
+        display: flex;
+        flex-direction: row;
+        font-size: 15;
+        font-weight: 400;
+        margin: 9px 0px;
+        .linkText {
+          margin-left: 15px;
+          overflow: hidden;
+          max-width: 100%;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  .graphstatsCard {
+    margin-top: 20px;
+    background: $whiteColor;
+    border: 2px solid $white300;
+    box-shadow: 0px 18px 20px -8px rgba(57, 57, 57, 0.05) !important;
+    border-radius: 8px;
+    padding: 20px;
+    .graphstatsContainer {
+      display: 'flex';
+      align-items: 'center';
+      .statsBar {
+        max-width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .statsText {
+          font-weight: 600;
+          font-size: 21px;
+        }
+        .center {
+          width: 100px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          .totalClicksText {
+            font-weight: 600;
+            font-size: 18px;
+          }
+          .ClicksText {
+            font-weight: 400;
+            font-size: 18px;
+          }
+        }
+      }
+      .dropDownSection {
+        display: flex;
+        justify-content: flex-end;
+        .dropDown {
+          display: flex;
+          width: 131px;
+          margin-left: 50px;
+          div {
+            div {
+              border: 1px solid #232323;
+              border-radius: 10px;
+              div {
+                border: none;
+                padding: 7px 19px;
+                padding-right: 1px;
+                font-weight: 400;
+                font-size: 14px;
+              }
+              img {
+                height: 5px;
+              }
+            }
+          }
+        }
+      }
+      .graph {
+        margin-top: 20px;
+        .chartBox {
+          margin-top: 20px;
+          width: 100%;
+          height: 250px;
+          .textFilter {
+            font-size: 14px;
+          }
+        }
+      }
+      .LinkText {
+        margin-top: 0px;
+      }
+    }
+    background: $whiteColor;
+    border: 2px solid $white300;
+    box-shadow: 0px 18px 20px -8px rgba(57, 57, 57, 0.05) !important;
+    border-radius: 8px;
+    padding: 20px;
+    .graphstatsContainer {
+      display: 'flex';
+      align-items: 'center';
+      .statsBar {
+        max-width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .statsText {
+          font-weight: 600;
+          font-size: 21px;
+        }
+        .center {
+          width: 100px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          margin-left: 35px;
+          .totalClicksText {
+            font-weight: 600;
+            font-size: 18px;
+          }
+          .ClicksText {
+            font-weight: 400;
+            font-size: 18px;
+          }
+        }
+        .copyIcon {
+          width: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .copyText {
+            font-weight: 500;
+            font-size: 14px;
+          }
+        }
+      }
+      .dropDownSection {
+        display: flex;
+        justify-content: flex-end;
+        .dropDown {
+          display: flex;
+          width: 131px;
+          margin-left: 50px;
+          div {
+            div {
+              border: 1px solid #232323;
+              border-radius: 10px;
+              div {
+                border: none;
+                padding: 7px 19px;
+                padding-right: 1px;
+                font-weight: 400;
+                font-size: 14px;
+              }
+              img {
+                height: 5px;
+              }
+            }
+          }
+        }
+      }
+      .graph {
+        margin-top: 20px;
+        .chartBox {
+          margin-top: 20px;
+          width: 100%;
+          height: 250px;
+          .textFilter {
+            font-size: 14px;
+          }
+        }
+      }
+      .LinkText {
+        margin-top: 20px;
+        .firstLink {
+          font-weight: 500;
+          font-size: 14px;
+          text-align: center;
+          text-decoration-line: underline;
+          text-decoration-color: $buttonPrimaryColor;
+          color: $buttonPrimaryColor;
+        }
+      }
+    }
+  }
+  .mobileGraphView {
+    margin: 7px 0;
+    .cardHeader {
+      background-color: #f4f4f4;
+      height: 31px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-radius: 8px 8px 0px 0px;
+      color: #232323;
+      font-family: 'Poppins-Medium';
+      font-size: 16px;
+      font-weight: 700;
+      padding-left: 25px;
+    }
+    .cardContent {
+      padding: 0 25px;
+      .LinkDropDownSection {
+        margin: 12px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .dropDownSection {
+          display: flex;
+          justify-content: flex-end;
+          .dropDown {
+            display: flex;
+            width: 131px;
+            div {
+              div {
+                border: 1px solid #232323;
+                border-radius: 10px;
+                height: 31px;
+                display: flex;
+                align-items: center;
+                div {
+                  border: none;
+                  padding: 7px 19px;
+                  padding-right: 1px;
+                  font-weight: 400;
+                  font-size: 14px;
+                }
+                img {
+                  height: 5px;
+                }
+              }
+            }
+          }
+        }
+        .firstLink {
+          color: #fc594a;
+          font-family: 'Poppins-Regular';
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          text-decoration-line: underline;
+        }
+      }
+      .statsClicks {
+        height: 41px;
+        border-radius: 8px;
+        background: #232323;
+        color: #f4f4f4;
+        display: flex;
+        align-items: center;
+        .center {
+          width: 100px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          margin-left: 35px;
+          img {
+            filter: invert(99%) sepia(7%) saturate(221%) hue-rotate(318deg) brightness(113%) contrast(91%);
+          }
+          .totalClicksText {
+            font-weight: 600;
+            font-size: 18px;
+          }
+          .ClicksText {
+            font-weight: 400;
+            font-size: 18px;
+          }
+        }
+      }
+      .graph {
+        margin-top: 20px;
+        .chartBox {
+          margin-top: 20px;
+          width: 100%;
+          height: 250px;
+          .textFilter {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 899px) {
+  .detailWrapper {
+    overflow-y: hidden;
+    height: initial;
+    .card {
+      padding: 10px;
+    }
+    .detailCard {
+      .row {
+        margin-top: 0px;
+        flex-wrap: wrap;
+        gap: 10px;
+        .description {
+          font-size: 16px;
+          font-weight: 700;
+        }
+        .iconContainer {
+          background-color: #232323;
+          color: white;
+          width: 100%;
+          border-radius: 8px;
+          padding: 11px 19px;
+          justify-content: space-between;
+          .centerRow {
+            margin-left: 0px;
+            margin-right: 10px;
+            .boldText {
+              font-size: 14px;
+            }
+            .normalText {
+              font-size: 14px;
+            }
+            .icon {
+              width: 16px;
+            }
+          }
+        }
+      }
+      .link {
+        .linkText {
+          font-size: 15px;
+        }
+      }
+      .detailContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+    }
+    .graphstatsCard {
+      .graphstatsContainer {
+        .statsBar {
+          .statsText {
+            font-size: 16px;
+            font-weight: 700;
+          }
+          .center {
+            h1 {
+              font-size: 14px;
+            }
+          }
+        }
+        .dropDownSection {
+          margin-top: 20px;
+          justify-content: flex-start;
+          .dropDown {
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+  }
+}

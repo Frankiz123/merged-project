@@ -1,0 +1,86 @@
+@import '../../../sass/variables.scss';
+.boxWrapper {
+  height: 100%;
+  border: 1px solid #f4f4f4;
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+  }
+  .WrapperShowMore {
+    height: 151px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 151px;
+    overflow: hidden;
+    scroll-behavior: inherit;
+    scroll-margin-top: 0;
+    transition: ease-in-out 1s;
+  }
+  .WrapperShowLess {
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: ease-in-out 0.5s;
+    z-index: 1000;
+  }
+  .statsWrapper {
+    display: flex;
+    border-bottom: solid 1px $borderColor;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    .textWithIcon {
+      flex: 2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      .flagName {
+        margin-right: 10px;
+        font-size: 20px;
+      }
+      .hashText {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        overflow: hidden;
+        max-width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    .iconTextBox {
+      flex: 1;
+      display: flex;
+      margin-right: 2px;
+      justify-content: flex-end;
+      align-items: center;
+      img {
+        width: 30.76px;
+        height: 19px;
+      }
+      .iconText {
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+  }
+  .footerLink {
+    position: absolute;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    cursor: pointer;
+    bottom: 10px;
+  }
+}

@@ -1,0 +1,89 @@
+@import '../../../sass/variables.scss';
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .heading {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    padding-left: 3%;
+    padding-top: 1%;
+  }
+  .conatiner {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .headingText {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+    }
+    .subtitleText {
+      font-style: normal;
+      font-weight: 275;
+      font-size: 18px;
+      text-align: center;
+      color: $textDarkColor;
+      max-width: 585px;
+      margin-top: 25px;
+      padding: 0px 10px;
+    }
+    .addLinkButton {
+      width: max-content;
+      margin-top: 40px;
+      button {
+        padding: 18px 50px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 0px 50px;
+    .heading {
+      font-size: 16px;
+      padding-left: 34px;
+    }
+    .conatiner {
+      .headingText {
+        font-size: 25px;
+        text-align: center;
+      }
+      .subtitleText {
+        font-size: 14px;
+        width: 249px;
+        margin-top: 18px;
+        padding: 0px;
+      }
+      .addLinkButton {
+        margin-top: 59px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 899px) {
+  .wrapper {
+    .heading {
+      font-size: 25px;
+      padding-left: 34px;
+    }
+    .conatiner {
+      .headingText {
+        font-size: 25px;
+      }
+      .subtitleText {
+        font-size: 14px;
+        width: 349px;
+        margin-top: 18px;
+        padding: 0px;
+      }
+      .addLinkButton {
+        margin-top: 59px;
+      }
+    }
+  }
+}

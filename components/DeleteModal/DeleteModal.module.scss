@@ -1,0 +1,62 @@
+.modalWraper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 0% 1%;
+  height: 319px;
+  width: 343px;
+  @media screen and (min-width: 600px) {
+    height: 287px;
+    width: 481px;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .headingText {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0 20px;
+    margin: 10px 20px 0px 20px;
+    text-align: center;
+    font-family: 'Poppins-Medium';
+    @media screen and (min-width: 600px) {
+      padding: 0 50px;
+      margin: 25px 20px 0px 20px;
+    }
+  }
+
+  .secondaryText {
+    margin-top: 7px;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    font-family: 'Poppins-Regular';
+  }
+  .buttonWrapper {
+    margin-top: 25px;
+    padding: 0 25px;
+    display: flex;
+  }
+
+  .buttonGroup {
+    margin-top: 25px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 30%;
+    @media screen and (min-width: 600px) {
+      margin-top: 25px;
+      width: 100%;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

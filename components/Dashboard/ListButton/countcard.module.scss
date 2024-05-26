@@ -1,0 +1,19 @@
+@import '../../../sass/variables.scss';
+.container {
+  display: flex !important;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .btnContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: max-content;
+    border-radius: 8px;
+    margin: 10px !important;
+
+    .listIconContainer {
+      min-width: 28px;
+    }
+  }
+}

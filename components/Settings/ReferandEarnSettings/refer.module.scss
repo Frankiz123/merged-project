@@ -1,0 +1,203 @@
+@import '../../../sass/variables.scss';
+.refText1 {
+  color: $textDarkColor;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+}
+.refText2 {
+  margin-top: 40px;
+  color: $textDarkColor;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+.refText3 {
+  margin-top: 10px;
+  color: $inputTextColor;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+.refText4 {
+  margin-top: 35px;
+  color: $textDarkColor;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+.heading {
+  margin-top: 40px;
+  span {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-family: 'Poppins-Bold';
+  }
+  p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+  }
+}
+.box1 {
+  display: flex;
+  align-items: center;
+  .button1 {
+    margin-top: 30px;
+    height: 50px;
+    width: 50px;
+    background: $buttonBackgroundColor;
+    border-color: $buttonBackgroundColor;
+    border-radius: 8px;
+    &:active,
+    &:hover {
+      background: $buttonBackgroundColor !important;
+    }
+    button {
+      border: none;
+    }
+  }
+  .refText5 {
+    margin-top: 40px;
+    margin-left: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: $textDarkColor;
+  }
+}
+.box2 {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  .textField {
+    width: 600px;
+    background: $inputTextFieldColor;
+    border: 1px solid $borderInputFieldColor;
+    border-radius: 8px;
+  }
+  .button2 {
+    margin-left: 10px;
+    border-radius: 8px;
+    button {
+      background: $textDarkColor;
+      height: 44px;
+      width: 116px;
+      .copyText {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        opacity: 1;
+        transition: opacity 1s ease;
+        position: absolute;
+        text-transform: none;
+        left: 17px;
+        top: 13px;
+        img {
+          filter: grayscale(100%) invert(100%);
+        }
+      }
+      .copiedText {
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        transition: opacity 1s ease;
+        text-transform: none;
+        img {
+          margin-left: 0px;
+          margin-top: 0px;
+          filter: grayscale(100%) invert(100%);
+        }
+      }
+      .fadeOut {
+        opacity: 0;
+      }
+      .fadeIn {
+        opacity: 1;
+      }
+    }
+  }
+}
+.referral {
+  margin-top: 30px;
+  max-width: 340px;
+  height: 59px;
+  display: flex;
+  flex-direction: row;
+  background: $buttonBackgroundColor;
+  border-color: $buttonBackgroundColor;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: space-around;
+  .referCounts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    .texttitle {
+      font-family: 'Poppins-Regular';
+      font-weight: 400;
+      font-size: 12px;
+    }
+    .textcount {
+      font-family: 'Poppins-Medium';
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+}
+.boxLink {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  a {
+    margin: 0px 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: $textDarkColor;
+  }
+  :first-child {
+    margin: 0px;
+  }
+}
+.link {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  a {
+    color: $buttonPrimaryColor;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 899px) {
+  .box2 {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    .textField {
+      width: 100%;
+      max-width: 340px;
+    }
+    .button2 {
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+  }
+  .link {
+    margin-top: 20px;
+    a {
+      color: $buttonPrimaryColor;
+    }
+  }
+  .refText4 {
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
